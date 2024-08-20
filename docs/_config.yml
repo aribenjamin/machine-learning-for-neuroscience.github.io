@@ -1,36 +1,36 @@
 # in _config.yml
 title: "Good research code"
-author: "<a href='https://xcorr.net'>Patrick Mineault</a> <a href='https://twitter.com/patrickmineault'><img height='24' width='24' src='_images/twitter.svg' alt='Twitter' style='width:24px'></a>"
+author: "<a href='https://ari-benjamin.com'>Ari Benjamin</a> <a href='https://twitter.com/aribenjamin'><img height='24' width='24' src='_images/twitter.svg' alt='Twitter' style='width:24px'></a>"
 copyright: "2021–2022"
-logo: figures/unicorn.png
+logo: figures/logo.png
 
 execute:
   execute_notebooks: "auto"
 
 repository:
-  url                       : "https://github.com/patrickmineault/repl-test"  # Online location of your book
+  url                       : "https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io"  # Online location of your book
   path_to_book              : .  # Optional path to your book, relative to the repository root
   branch                    : main  # Which branch of the repository should be used when creating links (optional)
 
 html:
-  google_analytics_id: G-3Q6LDVNS0X
+  google_analytics_id: 
   home_page_in_navbar: true
   use_edit_page_button: true
   use_repository_button: true
   use_issues_button: true
-  baseurl: https://goodresearch.dev/
+  baseurl: https://stupendous-churros-2104dd.netlify.app
   favicon: images/favicon.ico
   use_fullscreen_button: false
   comments:
     hypothesis: false
-  extra_footer: "Licensed under <a href='https://github.com/patrickmineault/codebook/blob/main/LICENSE'>CC-BY 4.0</a> [<a href='https://github.com/patrickmineault/codebook'>source</a>].<br /><a href='https://github.com/patrickmineault/codebook/issues'>Report issue</a>."
+  extra_footer: "Licensed under <a href='https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io/blob/main/LICENSE'>CC-BY 4.0</a> [<a href='https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io'>source</a>].<br /><a href='https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io/issues'>Report issue</a>."
 
 launch_buttons:
   thebe             : true
   notebook_interface: classic
 
 thebe_config:
-  repository_url : "https://github.com/patrickmineault/repl-test"  # Online location of your book
+  repository_url : "https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io"  # Online location of your book
   path_to_book   : "docs/"  # Optional path to your book, relative to the repository root
   branch         : main  # Which branch of the repository should be used when creating links (optional)
 
@@ -46,6 +46,6 @@ sphinx:
   extra_extensions:
   - sphinxext.opengraph
   config:
-    ogp_site_url: "https://goodresearch.dev/"
-    ogp_image: "https://goodresearch.dev/_images/unicorn.png"
+    ogp_site_url: "https://stupendous-churros-2104dd.netlify.app"
+    ogp_image: "https://stupendous-churros-2104dd.netlify.app_images/unicorn.png"
     ogp_description_length: 200
