@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta property="og:title" content="Conclusions" />
+  
+<meta property="og:type" content="website" />
+  
+<meta property="og:url" content="https://stupendous-churros-2104dd.netlify.app/conclusions.html" />
+  
+<meta property="og:description" content="This dissertation aims to justify and implement a machine learning framework for computational neuroscience. Together, these chapters demonstrate new ways in which machine learning can be used as t..." />
+  
+<meta property="og:image" content="https://stupendous-churros-2104dd.netlify.app_images/logo.png" />
+  
+<meta property="og:image:alt" content="Conclusions" />
+  
+    <title>Conclusions &#8212; Machine Learning as Tool and Theory in Computational Neuroscience</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+  <!-- add `style` or `link` tags with your CSS `@font-face` declarations here -->
+  <!-- ... and optionally preload the `woff2` for snappier page loads -->
+  <link rel="preload" href="_static/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="_static/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="_static/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="_static/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="_static/et-book/et-book-semi-bold-old-style-figures/et-book-semi-bold-old-style-figures.woff" as="font" type="font/woff" crossorigin>
+
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.59e7d1499aa759519747cb2a1a335dc4.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tufte.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.90c857b2bf8f3d46aa488b0ed8bf60a6.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <link rel="canonical" href="https://stupendous-churros-2104dd.netlify.app/conclusions.html" />
+    <link rel="shortcut icon" href="_static/logo.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Acknowledgements" href="acknowledgements.html" />
+    <link rel="prev" title="Efficient neural codes naturally emerge through gradient descent learning" href="chap6.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@patrickmineault" />
+    <meta name="twitter:title" content="The Good Research Code Handbook" />
+    <meta name="twitter:description" content="This handbook is for grad students, postdocs and PIs who do a lot of programming as part of their research. It will teach you, in a practical manner, how to organize your code so that it is easy to understand and works reliably." />
+    <meta name="twitter:image" content="https://goodresearch.dev/_images/unicorn.png" />
+
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3Q6LDVNS0X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-3Q6LDVNS0X');
+    </script>
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Machine Learning as Tool and Theory in Computational Neuroscience</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   Machine Learning as Tool and Theory in Computational Neuroscience
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Intro
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro1.html">
+   Neurophysiology practice and the complexity of sensory cortex
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro2.html">
+   Learning and its consequences
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="structure.html">
+   Structure of this dissertation
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Chapters
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="chap1.html">
+   Hue tuning curves in V4 change with visual context
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chap2.html">
+   Modern machine learning as benchmark for encoding models
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chap3.html">
+   The Four Roles of Supervised Machine Learning in Systems Neuroscience
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chap4.html">
+   A role for cortical interneurons as adversarial discriminators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chap5.html">
+   Measuring and regularizing networks in function space
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="chap6.html">
+   Efficient neural codes naturally emerge through gradient descent learning
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Conclusions
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Conclusions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acknowledgements.html">
+   Acknowledgements
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+<nav class="bd-links" id="nav-social">
+    <div class="bd-toc-item">
+        <p class="caption">
+            <span class="caption-text">Social</span>
+        </p>
+        <ul class="nav bd-sidenav" style="display:block">
+            <li class="toctree-l1"><a class="github-button" href="https://github.com/patrickmineault/codebook" data-icon="octicon-star" data-show-count="true" data-size="large" aria-label="Star patrickmineault/codebook on GitHub">Star on Github</a></li>
+            <li class="toctree-l1"><a href="http://eepurl.com/hHgNOH">Subscribe for updates</a></li>
+            <li class="toctree-l1"><a href="http://twitter.com/share?text=The+Good+Research+Code+Handbook.+Learn+to+write+readable%2C+maintainable+research+code+in+Python.&url=https://goodresearch.dev&user&via=patrickmineault" class="twitter-share-button" data-text="The Good Research Code Handbook. Learn to write readable, maintainable code in Python." data-via="patrickmineault" data-show-count="false">Tweet this handbook</a></li>
+        </ul>
+    </div>
+</nav>
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/conclusions.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io/issues/new?title=Issue%20on%20page%20%2Fconclusions.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io/edit/main/./conclusions.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chapters-1-and-2-neurophysiology">
+   Chapters 1 and 2: neurophysiology
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chapter-4-probabilistic-representation-learning">
+   Chapter 4: Probabilistic representation learning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chapter-5-neural-network-optimization">
+   Chapter 5: Neural network optimization
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chapter-6-the-sensory-consequences-of-learning-algorithms">
+   Chapter 6: The sensory consequences of learning algorithms
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="conclusions">
+<h1>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this headline">¶</a></h1>
+<p>This dissertation aims to justify and implement a machine learning framework for computational neuroscience. Together, these chapters demonstrate new ways in which machine learning can be used as tools (Chapters 1-3) or as a theories (Chapters 4-6) within neuroscience.</p>
+<p>Since each chapter relates to a different subfield, the conclusions and future directions drawn from each one are best directed at each field. A general conclusion follows.</p>
+<div class="section" id="chapters-1-and-2-neurophysiology">
+<h2>Chapters 1 and 2: neurophysiology<a class="headerlink" href="#chapters-1-and-2-neurophysiology" title="Permalink to this headline">¶</a></h2>
+<p>The techniques we developed in these chapters are ways to validate descriptions of neural activity and function. Along with these techniques is a message: such descriptions need to be validated in order to be meaningful.</p>
+<p>To illustrate this, we documented a failure of assumptions in a few specific situations. These were narrow, by necessity. In recordings of neurons in area V4 in two macaque monkeys, we found that although neurons have strong hue tuning, these do not capture how hue affects those neurons in general (Chapter 2). Likewise, generalized linear models mischaracterize how macaque M1 cells encode arm direction and velocity (Chapter 3). These findings do not alone indict the entire methodology. They are warnings and demonstrations of the necessity of validating a generalization of experimental findings.</p>
+<p>Our demonstrations are not the only papers with similar conclusions. It is not a rare situation that features unvaried by a researcher affect the neural response (and as argued in Chapter 2, it should be expected). Area V1 is a canary for the approach. There, papers have asked about generalization of orientation tuning to natural scenes (David et al., 2004; Touryan et al., 2005), and compared typical models with machine learning benchmarks (Cadena et al., 2019; Prenger et al., 2004). As warned by Olshausen and Field (Bruno A Olshausen &amp; Field, 2005, 2006), it seems much about the computations performed in V1 still remain to be understood. This warning exists for V1 because, unusually, the validating measurements have been performed.</p>
+<p>In other areas, however, it is rare that key validations are presented along with an encoding model or tuning curve. When omitted, it signals a tacit comfort with the possibility that tuning curves will change with context or that encoding models will miss explainable variance. Encouragingly, this trend may be changing. As experimental methods improve and to allow more neurons to be simultaneously recorded,  researchers are again using benchmarks to challenge previous assumptions about the meaning of neural activity (e.g. (Musall, Kaufman, Juavinett, Gluf, &amp; Churchland, 2019)).</p>
+<p>In addition to more frequent benchmarking, the future directions for neurophysiology might include theories of processing that guide one’s assumptions about responses to untested stimuli. Since the sensory systems know a great deal about the external world (Lillicrap &amp; Kording, 2019), models that incorporate naturalistic statistics are perhaps the most promising. Knowing the statistics of the training data allows neurophysiologists a crucial leg up. An older example taking this approach (to great success) is the notion of efficient coding (Barlow, 1961). Another possibility is to describe the effects of learning effectively with limited exposure to the natural world, as I explored in Chapter 7. By studying the principals by which neural codes emerge, neurophysiology might begin to better understand the codes themselves.</p>
+</div>
+<div class="section" id="chapter-4-probabilistic-representation-learning">
+<h2>Chapter 4: Probabilistic representation learning<a class="headerlink" href="#chapter-4-probabilistic-representation-learning" title="Permalink to this headline">¶</a></h2>
+<p>This chapter aimed to further theories of learning. Adopting a popular hypothesis of the computational goal of learning (probabilistic representation learning), it attempted to draw a line reaching down to the cortical circuits that could implement this learning goal. Two ends thus constrained the project: the known biology, and the desired computation.</p>
+<p>If any lesson is to be taken from this section, it is that an adversarial algorithm could, in principal, be implemented by the cortex. It is one way the brain might learn internal models of the world via switching between externally- and internally- driven modes of processing (Honey et al., 2017). If this is the case, it would mean that the brain contains discriminators of the two modes of activity, which we hypothesized could be certain interneuron cell types. These would be identifiable by a plasticity rule that switches sign with the mode switch. This algorithm is not implausible, to the extent it is not yet ruled out by known data, and would allow the cortex to solve the difficult and currently unresolved problems inherent to representation learning.</p>
+<p>This project treated with less flexibility the top-level computational goal: probabilistic representation learning, learning internal models of neural activity in sensory areas, and Bayesian inference over those models. In certain communities this framework is quite popular (Fiser, Berkes, Orbán, &amp; Lengyel, 2010; Friston, 2005). Yet this theory is not thoroughly linked to a biological substrate, and as described in this project, it is unclear how this objective could be learned by neural circuits. Previous proposals for learning circuits (e.g. (Friston, 2005; Hinton, Dayan, Frey, &amp; Neal, 1995; Rezende &amp; Gerstner, 2014)) have clear problems, and, candidly, my attempt at resolution involved an uncomfortable level of speculation. Since there is inconclusive evidence at the level of biology, the high-level computational goal must do more work to carry the theory than otherwise. If this, too, is inconclusive, perhaps a new and humble attention should be paid to learning circuits, especially during the sensitive or critical period of sensory plasticity.</p>
+</div>
+<div class="section" id="chapter-5-neural-network-optimization">
+<h2>Chapter 5: Neural network optimization<a class="headerlink" href="#chapter-5-neural-network-optimization" title="Permalink to this headline">¶</a></h2>
+<p>Neural networks encode functions. For certain questions of learning, one can bracket away the specific parameters that encode those functions and think about how the overall function changes. For neuroscience, this would amount to looking at changes in behavior instead of synapses, but using the mathematical language of optimization.</p>
+<p>This chapter proposed a learning rule for ANNs in which the allowed change in behavior is constant over time. This type of learning rule may be at play for animals, as well. In motor tasks, for example, learning appears dependent on the direction of an error but independent of the magnitude of that error (Fine &amp; Thoroughman, 2006). Thinking about optimization in function space, which is well-appreciated in machine learning, may be a concept that is useful for neuroscience as well.</p>
+<p>One possible future application in neuroscience is to extend the framework of Chapter 7 and ask about the behavioral consequences of learning with algorithms that incrementally adjust behavior. This is to replace gradient descent in parameter space with that in function space, but ask the same question about the residual effects of learning algorithms. This might allow similar insights, but would be agnostic to the specific mechanism by which the brain adjusts behavior. By circumventing the mechanistic issue of what mediates learning, this perspective may afford a more direct (yet abstract) description of the effects of learning on perception and behavior.</p>
+</div>
+<div class="section" id="chapter-6-the-sensory-consequences-of-learning-algorithms">
+<h2>Chapter 6: The sensory consequences of learning algorithms<a class="headerlink" href="#chapter-6-the-sensory-consequences-of-learning-algorithms" title="Permalink to this headline">¶</a></h2>
+<p>Neuroscience can gain from ‘artiphysiology’ of neural networks as a complement to neurophysiology. Would artificial neural networks trained on ImageNet be, like humans, more sensitive to basic visual features that are more common? Finding that the answer was ‘yes’, this chapter documented how this emerges from the learning mechanism of gradient descent. This was a move to link artiphysiology with deep learning theory. The consequences may resonate back from theory, though deep learning representations, and to a better understanding of the brain.</p>
+<p>In the course of this project, it became clear that this was a powerful way of thinking and just the beginning of what is possible. This paper focused on efficient coding, but a learning framework may help explain a constellation of neural phenomena. Already it has been tied to why representations appear low-dimensional (Flesch, Juechems, Dumbalska, Saxe, &amp; Summerfield, 2022) and why certain categories are learned before others (Saxe, McClelland, &amp; Ganguli, 2019). Future research may help to further describe these effects of learning in greater detail.</p>
+<p>With the bridge between machine learning theory and neuroscience now open, it is important that new concepts continue to be brought over. Machine learning theory is an emerging discipline. Many of its central issues – like why deep neural networks generalize, or what exactly they prefer to learn first – are still unresolved. These theories must be ported to neuroscience when and if they are found. One important area, in particular, is to incorporate theories that bridge the lazy (kernel) and rich (feature-learning) regimes identified by deep learning theory. These insights will almost certainly help to describe learning in the brain.</p>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<p>The process of science is not unlike a learning algorithm. From limited experience, it must make generalizations about an underlying reality or events in the future. This requires making assumptions. If these are incorrect, one is at danger of overgeneralizing (Chapters 2-3). If the assumptions are appropriate, one can learn effectively (Chapter 6) even though the biases of those assumptions are never totally escapable (Chapter 7). Proceeding in both domains requires identifying and optimizing one’s prior beliefs.</p>
+<p>As the theory of machine learning progresses, this field will have increasingly more to say about learning in the brain and its consequences. It is important that this bridge remain open. Why can we learn some things, and not others? What determines the function of cortical areas, as plastic as they are? These questions will continue to motivate me and hopefully many others in the coming years.</p>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p>Barlow, H. B. (1961). Possible principles underlying the transformation of sensory messages. Sensory communication, 1(01).</p>
+<p>Cadena, S. A., Denfield, G. H., Walker, E. Y., Gatys, L. A., Tolias, A. S., Bethge, M., &amp; Ecker, A. S. (2019). Deep convolutional models improve predictions of macaque V1 responses to natural images. PLoS Computational Biology, 15(4), e1006897.</p>
+<p>David, S. V., Vinje, W. E., &amp; Gallant, J. L. (2004). Natural stimulus statistics alter the receptive field structure of v1 neurons. Journal of Neuroscience, 24(31), 6991-7006.</p>
+<p>Fiser, J., Berkes, P., Orbán, G., &amp; Lengyel, M. (2010). Statistically optimal perception and learning: from behavior to neural representations. Trends in cognitive sciences, 14(3), 119-130.</p>
+<p>Flesch, T., Juechems, K., Dumbalska, T., Saxe, A., &amp; Summerfield, C. (2022). Orthogonal representations for robust context-dependent task performance in brains and neural networks. Neuron, S0896-6273(0822)00005-00008. doi:10.1016/j.neuron.2022.01.005</p>
+<p>Friston, K. (2005). A theory of cortical responses. Philosophical Transactions of the Royal Society B: Biological Sciences, 360(1456), 815-836.</p>
+<p>Hinton, G. E., Dayan, P., Frey, B. J., &amp; Neal, R. M. (1995). The” wake-sleep” algorithm for unsupervised neural networks. Science, 268(5214), 1158-1161.</p>
+<p>Lillicrap, T. P., &amp; Kording, K. P. (2019). What does it mean to understand a neural network? arXiv preprint arXiv:1907.06374.</p>
+<p>Musall, S., Kaufman, M. T., Juavinett, A. L., Gluf, S., &amp; Churchland, A. K. (2019). Single-trial neural dynamics are dominated by richly varied movements. Nature Neuroscience, 22(10), 1677-1686.</p>
+<p>Olshausen, B. A., &amp; Field, D. J. (2005). How close are we to understanding V1? Neural computation, 17(8), 1665-1699.</p>
+<p>Olshausen, B. A., &amp; Field, D. J. (2006). What is the other 85 percent of V1 doing. L. van Hemmen, &amp; T. Sejnowski (Eds.), 23, 182-211.</p>
+<p>Prenger, R., Wu, M. C.-K., David, S. V., &amp; Gallant, J. L. (2004). Nonlinear V1 responses to natural scenes revealed by neural network analysis. Neural Networks, 17(5), 663-679.</p>
+<p>Rezende, D., &amp; Gerstner, W. (2014). Stochastic variational learning in recurrent spiking networks. Frontiers in Computational Neuroscience, 8, 38. doi:10.3389/fncom.2014.00038</p>
+<p>Saxe, A. M., McClelland, J. L., &amp; Ganguli, S. (2019). A mathematical theory of semantic development in deep neural networks. Proceedings of the National Academy of Sciences, 116(23), 11537-11546.</p>
+<p>Touryan, J., Felsen, G., &amp; Dan, Y. (2005). Spatial structure of complex cell receptive fields measured with natural images. Neuron, 45(5), 781-791.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "aribenjamin/machine-learning-for-neuroscience.github.io",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="chap6.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Efficient neural codes naturally emerge through gradient descent learning</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="acknowledgements.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Acknowledgements</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By <a href='https://ari-benjamin.com'>Ari Benjamin</a> <a href='https://twitter.com/aribenjamin'> This is an online version of my PhD dissertation, submitted to UPenn in 2022. <img height='24' width='24' src='_images/twitter.svg' alt='Twitter' style='width:24px'></a><br/>
+        
+            &copy; Copyright 2021–2022.<br/>
+          <div class="extra_footer">
+            Licensed under <a href='https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io/blob/main/LICENSE'>CC-BY 4.0</a> [<a href='https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io'>source</a>].<br /><a href='https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io/issues'>Report issue</a>.
+          </div>
+      </p>
+    </div>
+  </footer>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'jd98', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </body>
+</html>
