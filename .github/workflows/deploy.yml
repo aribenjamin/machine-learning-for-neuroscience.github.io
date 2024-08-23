@@ -22,7 +22,7 @@ jobs:
         shell: bash -l {0}
         run: |
           conda activate cb
-          make build  # Replace with your actual build command
+          make build 
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
