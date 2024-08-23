@@ -14,3 +14,4 @@ dependencies:
     - sphinxext-opengraph
     - docutils==0.16
     - sphinx-autobuild
+    - bs4
