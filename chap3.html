@@ -2,312 +2,227 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta property="og:title" content="The Four Roles of Supervised Machine Learning in Systems Neuroscience" />
-  
-<meta property="og:type" content="website" />
-  
-<meta property="og:url" content="https://stupendous-churros-2104dd.netlify.app/chap3.html" />
-  
-<meta property="og:description" content="Foreword Machine learning plays multiple roles in this dissertation. These roles are logically distinct, and represent the general roles that machine learning can play more broadly in neuroscience...." />
-  
-<meta property="og:image" content="https://stupendous-churros-2104dd.netlify.app_images/logo.png" />
-  
-<meta property="og:image:alt" content="The Four Roles of Supervised Machine Learning in Systems Neuroscience" />
-  
-    <title>The Four Roles of Supervised Machine Learning in Systems Neuroscience &#8212; Machine Learning as Tool and Theory in Computational Neuroscience</title>
-    
-  <link href="_static/css/theme.css" rel="stylesheet" />
-  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
-
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
-    
-  <!-- add `style` or `link` tags with your CSS `@font-face` declarations here -->
-  <!-- ... and optionally preload the `woff2` for snappier page loads -->
-  <link rel="preload" href="_static/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="_static/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="_static/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="_static/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="_static/et-book/et-book-semi-bold-old-style-figures/et-book-semi-bold-old-style-figures.woff" as="font" type="font/woff" crossorigin>
-
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.59e7d1499aa759519747cb2a1a335dc4.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/tufte.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
-  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
-
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.90c857b2bf8f3d46aa488b0ed8bf60a6.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script >
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="The Four Roles of Supervised Machine Learning in Systems Neuroscience" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="https://stupendous-churros-2104dd.netlify.app/chap3.html" property="og:url"/>
+<meta content="Foreword Machine learning plays multiple roles in this dissertation. These roles are logically distinct, and represent the general roles that machine learning can play more broadly in neuroscience...." property="og:description"/>
+<meta content="https://stupendous-churros-2104dd.netlify.app_images/logo.png" property="og:image"/>
+<meta content="The Four Roles of Supervised Machine Learning in Systems Neuroscience" property="og:image:alt"/>
+<title>The Four Roles of Supervised Machine Learning in Systems Neuroscience — Machine Learning as Tool and Theory in Computational Neuroscience</title>
+<link href="_static/css/theme.css" rel="stylesheet"/>
+<link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet"/>
+<link href="_static/vendor/fontawesome/5.13.0/css/all.min.css" rel="stylesheet"/>
+<link as="font" crossorigin="" href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
+<!-- add `style` or `link` tags with your CSS `@font-face` declarations here -->
+<!-- ... and optionally preload the `woff2` for snappier page loads -->
+<link as="font" crossorigin="" href="_static/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff" rel="preload" type="font/woff"/>
+<link as="font" crossorigin="" href="_static/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff" rel="preload" type="font/woff"/>
+<link as="font" crossorigin="" href="_static/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff" rel="preload" type="font/woff"/>
+<link as="font" crossorigin="" href="_static/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff" rel="preload" type="font/woff"/>
+<link as="font" crossorigin="" href="_static/et-book/et-book-semi-bold-old-style-figures/et-book-semi-bold-old-style-figures.woff" rel="preload" type="font/woff"/>
+<link href="_static/pygments.css" rel="stylesheet" type="text/css">
+<link href="_static/sphinx-book-theme.59e7d1499aa759519747cb2a1a335dc4.css" rel="stylesheet" type="text/css">
+<link href="_static/togglebutton.css" rel="stylesheet" type="text/css">
+<link href="_static/copybutton.css" rel="stylesheet" type="text/css">
+<link href="_static/mystnb.css" rel="stylesheet" type="text/css">
+<link href="_static/sphinx-thebe.css" rel="stylesheet" type="text/css">
+<link href="_static/tufte.css" rel="stylesheet" type="text/css">
+<link href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" rel="stylesheet" type="text/css">
+<link href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" rel="stylesheet" type="text/css"/>
+<link as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js" rel="preload"/>
+<script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+<script src="_static/jquery.js"></script>
+<script src="_static/underscore.js"></script>
+<script src="_static/doctools.js"></script>
+<script src="_static/togglebutton.js"></script>
+<script src="_static/clipboard.min.js"></script>
+<script src="_static/copybutton.js"></script>
+<script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+<script src="_static/sphinx-book-theme.90c857b2bf8f3d46aa488b0ed8bf60a6.js"></script>
+<script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+<script>
         const thebe_selector = ".thebe,.cell"
         const thebe_selector_input = "pre,.cell_input div.highlight"
         const thebe_selector_output = ".output,.cell_output"
     </script>
-    <link rel="canonical" href="https://stupendous-churros-2104dd.netlify.app/chap3.html" />
-    <link rel="shortcut icon" href="_static/logo.png"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="A role for cortical interneurons as adversarial discriminators" href="chap4.html" />
-    <link rel="prev" title="Modern machine learning as benchmark for encoding models" href="chap2.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@patrickmineault" />
-    <meta name="twitter:title" content="The Good Research Code Handbook" />
-    <meta name="twitter:description" content="This handbook is for grad students, postdocs and PIs who do a lot of programming as part of their research. It will teach you, in a practical manner, how to organize your code so that it is easy to understand and works reliably." />
-    <meta name="twitter:image" content="https://goodresearch.dev/_images/unicorn.png" />
-
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3Q6LDVNS0X"></script>
-    <script>
+<link href="https://stupendous-churros-2104dd.netlify.app/chap3.html" rel="canonical">
+<link href="_static/logo.png" rel="shortcut icon"/>
+<link href="genindex.html" rel="index" title="Index"/>
+<link href="search.html" rel="search" title="Search"/>
+<link href="chap4.html" rel="next" title="A role for cortical interneurons as adversarial discriminators"/>
+<link href="chap2.html" rel="prev" title="Modern machine learning as benchmark for encoding models"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="None" name="docsearch:language"/>
+<meta content="summary" name="twitter:card">
+<meta content="@patrickmineault" name="twitter:site"/>
+<meta content="The Good Research Code Handbook" name="twitter:title"/>
+<meta content="This handbook is for grad students, postdocs and PIs who do a lot of programming as part of their research. It will teach you, in a practical manner, how to organize your code so that it is easy to understand and works reliably." name="twitter:description"/>
+<meta content="https://goodresearch.dev/_images/unicorn.png" name="twitter:image"/>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3Q6LDVNS0X"></script>
+<script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){ dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-3Q6LDVNS0X');
     </script>
-  </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
-
-    
-
-    <div class="container-xl">
-      <div class="row">
-          
+</meta></link></link></link></link></link></link></link></link></link></head>
+<body data-offset="80" data-spy="scroll" data-target="#bd-toc-nav">
+<div class="container-fluid" id="banner"></div>
+<div class="container-xl">
+<div class="row">
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
-      
-      <img src="_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Machine Learning as Tool and Theory in Computational Neuroscience</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="index.html">
-  </a>
- </li>
+<div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+<img alt="logo" class="logo" src="_static/logo.png"/>
+<h1 class="site-logo" id="site-title">Machine Learning as Tool and Theory in Computational Neuroscience</h1>
+</a>
+</div><form action="search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="icon fas fa-search"></i>
+<input aria-label="Search this book..." autocomplete="off" class="form-control" id="search-input" name="q" placeholder="Search this book..." type="search"/>
+</form><nav aria-label="Main" class="bd-links" id="bd-docs-nav">
+<div class="bd-toc-item active">
+<ul class="nav bd-sidenav">
+<li class="toctree-l1">
+<a class="reference internal" href="index.html">
+</a>
+</li>
 </ul>
 <p class="caption">
- <span class="caption-text">
+<span class="caption-text">
   Intro
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="intro.html">
+<li class="toctree-l1">
+<a class="reference internal" href="intro.html">
    Introduction
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="intro1.html">
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="intro1.html">
    Neurophysiology practice and the complexity of sensory cortex
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="intro2.html">
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="intro2.html">
    Learning and its consequences
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="structure.html">
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="structure.html">
    Structure of this dissertation
   </a>
- </li>
+</li>
 </ul>
 <p class="caption">
- <span class="caption-text">
+<span class="caption-text">
   Chapters
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="chap1.html">
+<li class="toctree-l1">
+<a class="reference internal" href="chap1.html">
    Hue tuning curves in V4 change with visual context
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chap2.html">
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="chap2.html">
    Modern machine learning as benchmark for encoding models
   </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+</li>
+<li class="toctree-l1 current active">
+<a class="current reference internal" href="#">
    The Four Roles of Supervised Machine Learning in Systems Neuroscience
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chap4.html">
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="chap4.html">
    A role for cortical interneurons as adversarial discriminators
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chap5.html">
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="chap5.html">
    Measuring and regularizing networks in function space
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="chap6.html">
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="chap6.html">
    Efficient neural codes naturally emerge through gradient descent learning
   </a>
- </li>
+</li>
 </ul>
 <p class="caption">
- <span class="caption-text">
+<span class="caption-text">
   Conclusions
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="conclusions.html">
+<li class="toctree-l1">
+<a class="reference internal" href="conclusions.html">
    Conclusions
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="acknowledgements.html">
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="acknowledgements.html">
    Acknowledgements
   </a>
- </li>
+</li>
 </ul>
-
-    </div>
+</div>
 </nav> <!-- To handle the deprecated key -->
-
 <div class="navbar_extra_footer">
   Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
 </div>
 
-<nav class="bd-links" id="nav-social">
-    <div class="bd-toc-item">
-        <p class="caption">
-            <span class="caption-text">Social</span>
-        </p>
-        <ul class="nav bd-sidenav" style="display:block">
-            <li class="toctree-l1"><a class="github-button" href="https://github.com/patrickmineault/codebook" data-icon="octicon-star" data-show-count="true" data-size="large" aria-label="Star patrickmineault/codebook on GitHub">Star on Github</a></li>
-            <li class="toctree-l1"><a href="http://eepurl.com/hHgNOH">Subscribe for updates</a></li>
-            <li class="toctree-l1"><a href="http://twitter.com/share?text=The+Good+Research+Code+Handbook.+Learn+to+write+readable%2C+maintainable+research+code+in+Python.&url=https://goodresearch.dev&user&via=patrickmineault" class="twitter-share-button" data-text="The Good Research Code Handbook. Learn to write readable, maintainable code in Python." data-via="patrickmineault" data-show-count="false">Tweet this handbook</a></li>
-        </ul>
-    </div>
-</nav>
 </div>
-
-
-          
-
-
-          
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
+<div class="topbar container-xl fixed-top">
+<div class="topbar-contents row">
+<div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+<div class="col pl-md-4 topbar-main">
+<button aria-controls="site-navigation" aria-expanded="true" aria-label="Toggle navigation" class="navbar-toggler ml-0" data-placement="left" data-target=".site-navigation" data-toggle="tooltip" id="navbar-toggler" title="Toggle navigation" type="button">
+<i class="fas fa-bars"></i>
+<i class="fas fa-arrow-left"></i>
+<i class="fas fa-arrow-up"></i>
+</button>
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/chap3.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
+<button aria-label="Download this page" class="btn btn-secondary topbarbtn" id="dropdown-buttons-trigger"><i class="fas fa-download"></i></button>
+<div class="dropdown-buttons">
+<!-- ipynb file if we had a myst markdown file -->
+<!-- Download raw file -->
+<a class="dropdown-buttons" href="_sources/chap3.md"><button class="btn btn-secondary topbarbtn" data-placement="left" data-toggle="tooltip" title="Download source file" type="button">.md</button></a>
+<!-- Download PDF via print -->
+<button class="btn btn-secondary topbarbtn" data-placement="left" data-toggle="tooltip" id="download-print" onclick="window.print()" title="Print to PDF" type="button">.pdf</button>
 </div>
-
-            <!-- Source interaction buttons -->
-
+</div>
+<!-- Source interaction buttons -->
 <div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io/issues/new?title=Issue%20on%20page%20%2Fchap3.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io/edit/main/./chap3.md"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
+<button aria-label="Connect with source repository" class="btn btn-secondary topbarbtn" id="dropdown-buttons-trigger"><i class="fab fa-github"></i></button>
+<div class="dropdown-buttons sourcebuttons">
+<a class="repository-button" href="https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io"><button class="btn btn-secondary topbarbtn" data-placement="left" data-toggle="tooltip" title="Source repository" type="button"><i class="fab fa-github"></i>repository</button></a>
+<a class="issues-button" href="https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io/issues/new?title=Issue%20on%20page%20%2Fchap3.html&amp;body=Your%20issue%20content%20here."><button class="btn btn-secondary topbarbtn" data-placement="left" data-toggle="tooltip" title="Open an issue" type="button"><i class="fas fa-lightbulb"></i>open issue</button></a>
+<a class="edit-button" href="https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io/edit/main/./chap3.md"><button class="btn btn-secondary topbarbtn" data-placement="left" data-toggle="tooltip" title="Edit this page" type="button"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
 </div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-        </div>
-    </div>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
-              <div>
-                
-  <a href="https://www.sciencedirect.com/science/article/pii/S0301008218300856" class="prominent-link">
-  <div class="prominent-link-title">Article link</div>
-  <div class="prominent-link-description">Progress in Neurobiology</div>
+<!-- Full screen (wrap in <a> to have style consistency -->
+<a class="full-screen-button"><button aria-label="Fullscreen mode" class="btn btn-secondary topbarbtn" data-placement="bottom" data-toggle="tooltip" onclick="toggleFullScreen()" title="Fullscreen mode" type="button"><i class="fas fa-expand"></i></button></a>
+<!-- Launch buttons -->
+</div>
+<!-- Table of contents -->
+<div class="d-none d-md-block col-md-2 bd-toc show">
+</div>
+</div>
+</div>
+<div class="row" id="main-content">
+<div class="col-12 col-md-9 pl-md-3 pr-md-0">
+<div>
+<a class="prominent-link" href="https://www.sciencedirect.com/science/article/pii/S0301008218300856">
+<div class="prominent-link-title">Article link</div>
+<div class="prominent-link-description">Progress in Neurobiology</div>
 </a>
 <div class="section" id="the-four-roles-of-supervised-machine-learning-in-systems-neuroscience">
 <h1>The Four Roles of Supervised Machine Learning in Systems Neuroscience<a class="headerlink" href="#the-four-roles-of-supervised-machine-learning-in-systems-neuroscience" title="Permalink to this headline">¶</a></h1>
@@ -318,8 +233,7 @@
 <p>Role 3 is to set benchmarks for simple models of the brain, as described in Chapter 2.</p>
 <p>Role 4 is for machine learning to itself serve as a model for understanding the brain. This is exemplified by Chapters 3, 4, and 5.</p>
 </div>
-
-    <script type="text/x-thebe-config">
+<script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
@@ -337,64 +251,49 @@
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
-
-              </div>
-              
-        
-            
-
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="chap2.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Modern machine learning as benchmark for encoding models</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="chap4.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">A role for cortical interneurons as adversarial discriminators</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
+<script>kernelName = 'python3'</script>
 </div>
+<div class="prev-next-bottom">
+<div id="prev">
+<a class="left-prev" href="chap2.html" title="previous page">
+<i class="prevnext-label fas fa-angle-left"></i>
+<div class="prevnext-info">
+<p class="prevnext-label">previous</p>
+<p class="prevnext-title">Modern machine learning as benchmark for encoding models</p>
+</div>
+</a>
+</div>
+<div id="next">
+<a class="right-next" href="chap4.html" title="next page">
+<div class="prevnext-info">
+<p class="prevnext-label">next</p>
+<p class="prevnext-title">A role for cortical interneurons as adversarial discriminators</p>
+</div>
+<i class="prevnext-label fas fa-angle-right"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="container">
+<p>
         
-        </div>
-    </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
+          By <a href="https://ari-benjamin.com">Ari Benjamin</a> <a href="https://twitter.com/aribenjamin"> This is an online version of my PhD dissertation, submitted to UPenn in 2022. <img alt="Twitter" height="24" src="_images/twitter.svg" style="width:24px" width="24"/></a><br/>
         
-          By <a href='https://ari-benjamin.com'>Ari Benjamin</a> <a href='https://twitter.com/aribenjamin'> This is an online version of my PhD dissertation, submitted to UPenn in 2022. <img height='24' width='24' src='_images/twitter.svg' alt='Twitter' style='width:24px'></a><br/>
-        
-            &copy; Copyright 2021–2022.<br/>
-          <div class="extra_footer">
-            Licensed under <a href='https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io/blob/main/LICENSE'>CC-BY 4.0</a> [<a href='https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io'>source</a>].<br /><a href='https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io/issues'>Report issue</a>.
+            © Copyright 2021–2022.<br/>
+<div class="extra_footer">
+            Licensed under <a href="https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io/blob/main/LICENSE">CC-BY 4.0</a> [<a href="https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io">source</a>].<br/><a href="https://github.com/aribenjamin/machine-learning-for-neuroscience.github.io/issues">Report issue</a>.
           </div>
-      </p>
-    </div>
-  </footer>
-  <!-- Place this tag in your head or just before your close body tag. -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</p>
+</div>
+</footer>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
 </main>
-
-
-      </div>
-    </div>
-  
-  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  
+</div>
+</div>
+<script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 <script async="" src="https://www.google-analytics.com/analytics.js"></script>
 <script>
                         window.ga = window.ga || function () {
@@ -404,6 +303,5 @@
                         ga('set', 'anonymizeIp', true);
                         ga('send', 'pageview');
                     </script>
-
-  </body>
+</body>
 </html>
