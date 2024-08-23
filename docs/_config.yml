@@ -1,6 +1,6 @@
 # in _config.yml
-title: "Good research code"
-author: "<a href='https://ari-benjamin.com'>Ari Benjamin</a> <a href='https://twitter.com/aribenjamin'><img height='24' width='24' src='_images/twitter.svg' alt='Twitter' style='width:24px'></a>"
+title: "Machine Learning as Tool and Theory in Computational Neuroscience"
+author: "<a href='https://ari-benjamin.com'>Ari Benjamin</a> <a href='https://twitter.com/aribenjamin'> This is an online version of my PhD dissertation, submitted to UPenn in 2022. <img height='24' width='24' src='_images/twitter.svg' alt='Twitter' style='width:24px'></a>"
 copyright: "2021–2022"
 logo: figures/logo.png
 
@@ -13,13 +13,13 @@ repository:
   branch                    : main  # Which branch of the repository should be used when creating links (optional)
 
 html:
-  google_analytics_id: 
+  google_analytics_id: jd98
   home_page_in_navbar: true
   use_edit_page_button: true
   use_repository_button: true
   use_issues_button: true
   baseurl: https://stupendous-churros-2104dd.netlify.app
-  favicon: images/favicon.ico
+  favicon: images/logo.png
   use_fullscreen_button: false
   comments:
     hypothesis: false
@@ -47,5 +47,5 @@ sphinx:
   - sphinxext.opengraph
   config:
     ogp_site_url: "https://stupendous-churros-2104dd.netlify.app"
-    ogp_image: "https://stupendous-churros-2104dd.netlify.app_images/unicorn.png"
+    ogp_image: "https://stupendous-churros-2104dd.netlify.app_images/logo.png"
     ogp_description_length: 200

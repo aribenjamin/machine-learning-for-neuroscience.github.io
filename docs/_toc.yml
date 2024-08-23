@@ -3,20 +3,20 @@ root: index
 parts:
 - caption: Intro
   chapters:
-    - file: roadmap
-    - file: brains
-- caption: Lessons
+    - file: intro
+    - file: intro1
+    - file: intro2
+    - file: structure
+- caption: Chapters
   chapters:
-    - file: setup
-    - file: tidy
-    - file: decoupled
-    - file: testing
-    - file: docs
-    - file: pipelines
-    - file: social
-    - file: zipf
-- caption: Extras
+    - file: chap1
+    - file: chap2
+    - file: chap3
+    - file: chap4
+    - file: chap5
+    - file: chap6
+    - file: chap7
+- caption: Conclusions
   chapters:
-    - file: cka
-    - file: tools
+    - file: conclusions
     - file: acknowledgements
