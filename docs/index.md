@@ -11,9 +11,12 @@ This is a version of my PhD dissertation that is designed to be read online. Thi
 If you would like to read this dissertation in a more traditional format, you can navigate to the [PDF version hosted on ProQuest](https://www.proquest.com/openview/e10a4f006cab070bc980ba0ebd2849eb).
 ```
 
-_A DISSERTATION in Bioengineering_
+<div align="center">
 
-_By Ari Benjamin_
+*A DISSERTATION in Bioengineering*
 
-_University of Pennsylvania, 2022_
+*By Ari Benjamin*
 
+*University of Pennsylvania, 2022*
+
+</div>
